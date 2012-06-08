@@ -14,6 +14,7 @@ namespace WpfApplication1
             InitializeComponent();
 
             browser.CreateObject("AppGlobal");
+
             browser.SetObjectCallback("AppGlobal", "Execute", (sender, args) =>
             {
                 Console.WriteLine("Called From Browser");
