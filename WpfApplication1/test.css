@@ -1,0 +1,27 @@
+﻿input {
+  cursor: defualt;
+  font-family: Arial, "Sans Serif";
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  height: 28px;
+  border: 1px solid black;
+  padding: 0 10px;
+  margin: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(45%, white), color-stop(70%, #CCC), color-stop(95%, #CCC), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(top, white 45%, #CCC 70%, #CCC 95%, white 100%);
+  background-image: -moz-linear-gradient(top, white 45%, #CCC 70%, #CCC 95%, white 100%);
+  background-image: -o-linear-gradient(top, white 45%, #CCC 70%, #CCC 95%, white 100%);
+  background-image: -ms-linear-gradient(top, white 45%, #CCC 70%, #CCC 95%, white 100%);
+  background-image: linear-gradient(top, white 45%, #CCC 70%, #CCC 95%, white 100%);
+}
+
+div {
+  background-color: #ADD8E6;
+  -webkit-border-radius: 5px;
+  padding: 10px;
+}
