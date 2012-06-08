@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
 using System.Windows;
 using Awesomium.Core;
 
@@ -33,7 +35,9 @@ namespace WpfApplication1
 
             browser.Crashed += (sender, args) => Console.WriteLine(args);
 
-            browser.LoadURL("file:///C:/dev/Learning/WPF-EmbeddedBrowser/WpfApplication1/bin/Debug/test.html");
+            var directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
+
+            browser.LoadURL(Path.Combine(directory, "test.html"));
         }
 
         private void SendMessageToBrowser(string message)
